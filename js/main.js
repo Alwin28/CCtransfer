@@ -1,0 +1,1 @@
+// Main JavaScript - general functionality, navigation, last updated timestamp
