@@ -26,7 +26,7 @@
         <a href="resources.html">Resources</a>
         <a href="opportunities.html">Opportunities</a>
         <a href="campuses.html">Campuses</a>
-        <a href="honors.html" style="color:var(--brand)">Honors</a>
+        <a href="honors.html" style="color:var(--brand-2)">Honors</a>
         <a href="contact.html" class="btn btn--primary">Get Help</a>
       </nav>
     </div>
@@ -36,7 +36,10 @@
   <section class="hero">
     <div class="container">
       <h1>Honors Programs</h1>
-      <p class="hero-sub">Enhance your transfer journey with Honors opportunities at California Community Colleges. Priority admission, early registration, and exclusive benefits.</p>
+      <p class="hero-sub">Priority admission, early registration, and enhanced transfer opportunities at California Community Colleges.</p>
+      <div class="hero-cta">
+        <a class="btn btn--secondary" href="transfer-programs.html">View Transfer Programs</a>
+      </div>
     </div>
   </section>
 
@@ -45,64 +48,53 @@
     <div class="container">
       <h2>What is the Honors Program?</h2>
       <p>The Honors Program at California Community Colleges provides academically motivated students with an enriched educational experience designed to prepare them for transfer to competitive four-year institutions.</p>
-      
-      <div class="card" style="margin-top:1.5rem">
-        <h3>Honors Transfer Council of California (HTCC) & TAP</h3>
-        <p class="muted">The <strong>Honors Transfer Council of California (HTCC)</strong> coordinates honors programs across California community colleges. Many colleges participate in the <strong>Transfer Alliance Program (TAP)</strong>, which provides additional benefits for UC transfers, particularly to UCLA.</p>
-      </div>
+      <p>The <strong>Honors Transfer Council of California (HTCC)</strong> coordinates honors programs across California community colleges. Many colleges participate in the <strong>Transfer Alliance Program (TAP)</strong>, which provides additional benefits for UC transfers, particularly to UCLA.</p>
     </div>
   </section>
 
   <!-- Benefits Section -->
-  <section style="background:#0f1324">
+  <section class="features">
     <div class="container">
-      <h2 style="text-align:center; margin-bottom:3rem">Why Join an Honors Program?</h2>
+      <h2>Benefits of Honors Programs</h2>
       <div class="grid-3">
         <div class="card">
-          <h3 style="margin-bottom:0.5rem">Priority Admission</h3>
-          <p class="muted" style="margin:0">Enhanced consideration during the UC and CSU transfer application review process</p>
+          <h3>Priority Admission</h3>
+          <p>Enhanced consideration during UC and CSU transfer applications</p>
         </div>
         <div class="card">
-          <h3 style="margin-bottom:0.5rem">Early Registration</h3>
-          <p class="muted" style="margin:0">Register for classes before other students, ensuring you get the courses you need</p>
+          <h3>Early Registration</h3>
+          <p>Register for classes before other students</p>
         </div>
         <div class="card">
-          <h3 style="margin-bottom:0.5rem">Smaller Classes</h3>
-          <p class="muted" style="margin:0">Honors courses typically have smaller class sizes for more personalized attention</p>
+          <h3>Smaller Classes</h3>
+          <p>More personalized attention in honors courses</p>
         </div>
         <div class="card">
-          <h3 style="margin-bottom:0.5rem">Research Mentoring</h3>
-          <p class="muted" style="margin:0">Access to research opportunities and faculty mentorship programs</p>
+          <h3>Research Opportunities</h3>
+          <p>Access to faculty mentorship and research programs</p>
         </div>
         <div class="card">
-          <h3 style="margin-bottom:0.5rem">Enriched Curriculum</h3>
-          <p class="muted" style="margin:0">Challenging coursework that prepares you for university-level academics</p>
+          <h3>Enriched Curriculum</h3>
+          <p>Challenging coursework for university preparation</p>
         </div>
         <div class="card">
-          <h3 style="margin-bottom:0.5rem">Networking</h3>
-          <p class="muted" style="margin:0">Connect with other high-achieving students and build lasting relationships</p>
+          <h3>Student Community</h3>
+          <p>Connect with motivated, high-achieving peers</p>
         </div>
-      </div>
-
-      <!-- CTA to Transfer Programs -->
-      <div style="margin-top:3rem; text-align:center; padding:3rem 2rem; background:linear-gradient(135deg, rgba(79,140,255,.15), rgba(255,165,82,.1)); border-radius:var(--radius); border:1px solid var(--stroke)">
-        <h3 style="font-size:1.75rem; margin-bottom:0.75rem">Connect Honors to Transfer Programs</h3>
-        <p class="muted" style="max-width:600px; margin:0 auto 1.5rem">Discover how Honors programs connect to TAP, H2H, and other transfer pathways to maximize your admission chances</p>
-        <a href="transfer-programs.html" class="btn btn--secondary">Explore Transfer Programs</a>
       </div>
     </div>
   </section>
 
   <!-- College Lookup Tool -->
-  <section>
+  <section style="padding:64px 0">
     <div class="container">
-      <h2 style="text-align:center; margin-bottom:1rem">Find Your College's Honors Program</h2>
-      <p class="muted" style="text-align:center; max-width:700px; margin:0 auto 2rem">Select your community college to view specific honors program requirements and contact information.</p>
+      <h2>Find Your College's Honors Program</h2>
+      <p>Select your community college to view honors program requirements and contact information.</p>
       
-      <div class="card" style="max-width:800px; margin:0 auto; padding:2rem">
-        <label for="college-select" style="display:block; margin-bottom:0.75rem; font-weight:600; font-size:1.1rem">Select Your Community College</label>
+      <div class="card" style="max-width:800px; margin:1.5rem auto 0; padding:2rem">
+        <label for="college-select" style="display:block; margin-bottom:0.75rem; font-weight:600">Your Community College</label>
         <div style="display:flex; gap:1rem; flex-wrap:wrap">
-          <select id="college-select" style="flex:1; min-width:280px; padding:0.85rem 1rem; font-size:1rem; border:1px solid var(--stroke); border-radius:10px; background:var(--bg); color:var(--text)">
+          <select id="college-select" class="quick-finder input" style="flex:1; min-width:280px; padding:0.85rem 1rem; font-size:1rem; border:1px solid var(--stroke); border-radius:10px; background:#f8f8f8; color:var(--text)">
             <option value="">-- Choose a College --</option>
             
             <optgroup label="Northern California">
@@ -218,55 +210,51 @@
         </div>
 
         <!-- Results Display -->
-        <div id="results-container" style="display:none; margin-top:2.5rem; padding:2rem; background:var(--bg); border:2px solid var(--brand); border-radius:var(--radius); box-shadow:0 10px 40px rgba(79,140,255,.15)">
-          <h3 id="college-name" style="color:var(--brand); margin-bottom:2rem; padding-bottom:1rem; border-bottom:1px solid var(--stroke); font-size:1.75rem"></h3>
+        <div id="results-container" style="display:none; margin-top:2rem; padding:2rem; background:#fff; border:1px solid var(--stroke); border-radius:var(--radius)">
+          <h3 id="college-name" style="margin-bottom:1.5rem"></h3>
           
-          <div style="margin-bottom:2.5rem">
-            <h4 style="color:var(--text); margin-bottom:1rem; font-size:1.2rem">Program Requirements</h4>
-            <ul id="requirements-list" style="list-style:none; padding-left:0">
+          <div style="margin-bottom:2rem">
+            <h4>Program Requirements</h4>
+            <ul id="requirements-list" style="list-style:disc; padding-left:1.5rem">
               <!-- Requirements will be populated here -->
             </ul>
           </div>
 
-          <div style="margin-bottom:2.5rem">
-            <h4 style="color:var(--text); margin-bottom:1rem; font-size:1.2rem">Completion Requirements</h4>
-            <ul id="completion-list" style="list-style:none; padding-left:0">
+          <div style="margin-bottom:2rem">
+            <h4>Completion Requirements</h4>
+            <ul id="completion-list" style="list-style:disc; padding-left:1.5rem">
               <!-- Completion requirements will be populated here -->
             </ul>
           </div>
 
-          <div style="background:var(--card); padding:1.75rem; border-radius:12px; border:1px solid var(--stroke)">
-            <h4 style="color:var(--text); margin-bottom:1rem; font-size:1.2rem">Contact Information</h4>
-            <p id="contact-details" class="muted" style="margin-bottom:0.75rem"></p>
+          <div style="background:#f8f8f8; padding:1.5rem; border-radius:10px">
+            <h4>Contact</h4>
+            <p id="contact-details" style="margin-bottom:0.5rem"></p>
             <p id="website-link" style="margin:0"></p>
           </div>
         </div>
 
         <!-- Placeholder Message -->
-        <div id="placeholder-message" style="margin-top:2rem; padding:1.75rem; background:rgba(255,165,82,.08); border-left:4px solid var(--brand-2); border-radius:10px">
-          <p class="muted" style="margin:0"><em><strong>Note:</strong> This is a placeholder lookup tool. Detailed honors program information for all California Community Colleges will be added soon. To contribute data for your college, please <a href="contact.html" class="link" style="color:var(--brand-2)">contact us</a>.</em></p>
+        <div id="placeholder-message" style="margin-top:1.5rem; padding:1.5rem; background:#fffbeb; border-left:3px solid var(--brand-2); border-radius:8px">
+          <p style="margin:0"><strong>Note:</strong> Detailed honors program information for all California Community Colleges will be added soon. To contribute data, <a href="contact.html" class="link">contact us</a>.</p>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Application Timeline -->
-  <section style="background:#0f1324">
+  <section class="how">
     <div class="container">
-      <h2 style="text-align:center; margin-bottom:2.5rem">Application Timeline & Getting Started</h2>
-      <div class="card" style="max-width:900px; margin:0 auto; padding:2.5rem">
-        <p style="font-size:1.1rem; margin-bottom:1.5rem">Honors program application timelines vary by college. Check with your specific community college for:</p>
-        <ul class="muted" style="margin-bottom:2rem">
-          <li style="margin-bottom:0.75rem">Application deadlines (typically in spring for fall entry)</li>
-          <li style="margin-bottom:0.75rem">Minimum GPA requirements (usually 3.0-3.5)</li>
-          <li style="margin-bottom:0.75rem">Required essays or personal statements</li>
-          <li style="margin-bottom:0.75rem">Faculty recommendations</li>
-          <li style="margin-bottom:0.75rem">Interview requirements (if applicable)</li>
-        </ul>
-        <div style="background:rgba(255,165,82,.1); padding:1.5rem; border-radius:10px; border-left:4px solid var(--brand-2)">
-          <p style="margin:0"><strong style="color:var(--brand-2); font-size:1.1rem">Pro Tip:</strong> <span style="color:var(--text)">Many students apply during their first semester at community college. Don't wait—start early!</span></p>
-        </div>
-      </div>
+      <h2>Application Timeline</h2>
+      <p>Honors program application timelines vary by college. Check with your specific community college for:</p>
+      <ul>
+        <li>Application deadlines (typically spring for fall entry)</li>
+        <li>Minimum GPA requirements (usually 3.0-3.5)</li>
+        <li>Required essays or personal statements</li>
+        <li>Faculty recommendations</li>
+        <li>Interview requirements (if applicable)</li>
+      </ul>
+      <p><strong>Tip:</strong> Many students apply during their first semester. Start early.</p>
     </div>
   </section>
 

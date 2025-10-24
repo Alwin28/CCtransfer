@@ -106,8 +106,7 @@ function displayHonorsInfo(collegeId) {
     requirementsList.innerHTML = '';
     data.requirements.forEach(req => {
         const li = document.createElement('li');
-        li.style.cssText = 'padding-left:1.5rem; position:relative; margin-bottom:0.75rem; color:var(--muted)';
-        li.innerHTML = `<span style="color:var(--brand); position:absolute; left:0">•</span> ${req}`;
+        li.textContent = req;
         requirementsList.appendChild(li);
     });
 
@@ -116,8 +115,7 @@ function displayHonorsInfo(collegeId) {
     completionList.innerHTML = '';
     data.completion.forEach(req => {
         const li = document.createElement('li');
-        li.style.cssText = 'padding-left:1.5rem; position:relative; margin-bottom:0.75rem; color:var(--muted)';
-        li.innerHTML = `<span style="color:var(--brand); position:absolute; left:0">•</span> ${req}`;
+        li.textContent = req;
         completionList.appendChild(li);
     });
 
