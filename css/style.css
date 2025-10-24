@@ -1,23 +1,19 @@
-/* Main stylesheet - colors, typography, general styles */
+:root {
+  /* 🎓 UCLA-Inspired Palette */
+  --ucla-blue: #2774AE;     /* main brand blue */
+  --jonquil:   #FFD100;     /* yellow accent */
+  --indigo:    #003B5C;     /* deep blue (nav/footer) */
+  --oxford:    #0A2342;     /* darkest text blue */
+  --smoke:     #F5F5F5;     /* light background */
 
-:root{
-  --bg:#0b1220;
-  --card:#0f172a;
-  --text:#e5eefc;
-  --muted:#a7b3c9;
-  --brand:#4f8cff;      /* primary */
-  --brand-2:#ffa552;    /* accent */
-  --stroke:#1f2a44;
-  --radius:16px;
-  --shadow:0 10px 30px rgba(0,0,0,.25);
+  /* Tokens applied across layout */
+  --bg: var(--smoke);
+  --card: #ffffff;
+  --text: var(--oxford);
+  --muted: rgba(10, 35, 66, 0.7);
+  --brand: var(--ucla-blue);   /* primary */
+  --brand-2: var(--jonquil);   /* accent */
+  --stroke: rgba(0, 0, 0, 0.08);
+  --radius: 16px;
+  --shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
-
-*{box-sizing:border-box}
-html,body{height:100%}
-body{
-  margin:0; font:16px/1.5 system-ui, -apple-system, Segoe UI, Roboto, Inter, Arial, sans-serif;
-  color:var(--text); background:linear-gradient(180deg,#071022, #0b1220 35%, #0b1220);
-}
-a{color:inherit; text-decoration:none}
-img{max-width:100%; display:block}
-.muted{color:var(--muted)}
