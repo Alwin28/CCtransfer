@@ -1,6 +1,293 @@
-<!-- Honors Programs Page -->
-<!-- What is the Honors Program? -->
-<!-- HTCC + TAP overview -->
-<!-- Requirements table by community college (can load from honors.json) -->
-<!-- Benefits: early registration, smaller classes, research mentoring -->
-<!-- Application timeline & contact info -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Honors Programs | CCTransfer</title>
+  <meta name="description" content="Discover California Community College Honors programs, requirements, and transfer benefits." />
+  
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/layout.css" />
+  <link rel="stylesheet" href="css/components.css" />
+</head>
+<body>
+  <!-- Site Header / Nav -->
+  <header class="site-header">
+    <div class="container row between center">
+      <a class="logo" href="/">CCTransfer</a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav" id="siteNav">
+        <a href="transfer-programs.html">Programs</a>
+        <a href="deadlines.html">Deadlines</a>
+        <a href="resources.html">Resources</a>
+        <a href="opportunities.html">Opportunities</a>
+        <a href="campuses.html">Campuses</a>
+        <a href="honors.html" style="color:var(--brand)">Honors</a>
+        <a href="contact.html" class="btn btn--primary">Get Help</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container">
+      <h1>Honors Programs</h1>
+      <p class="hero-sub">Enhance your transfer journey with Honors opportunities at California Community Colleges. Priority admission, early registration, and exclusive benefits.</p>
+    </div>
+  </section>
+
+  <!-- What is Honors -->
+  <section>
+    <div class="container">
+      <h2>What is the Honors Program?</h2>
+      <p>The Honors Program at California Community Colleges provides academically motivated students with an enriched educational experience designed to prepare them for transfer to competitive four-year institutions.</p>
+      
+      <div class="card" style="margin-top:1.5rem">
+        <h3>Honors Transfer Council of California (HTCC) & TAP</h3>
+        <p class="muted">The <strong>Honors Transfer Council of California (HTCC)</strong> coordinates honors programs across California community colleges. Many colleges participate in the <strong>Transfer Alliance Program (TAP)</strong>, which provides additional benefits for UC transfers, particularly to UCLA.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Benefits Section -->
+  <section style="background:#0f1324">
+    <div class="container">
+      <h2 style="text-align:center; margin-bottom:3rem">Why Join an Honors Program?</h2>
+      <div class="grid-3">
+        <div class="card">
+          <h3 style="margin-bottom:0.5rem">Priority Admission</h3>
+          <p class="muted" style="margin:0">Enhanced consideration during the UC and CSU transfer application review process</p>
+        </div>
+        <div class="card">
+          <h3 style="margin-bottom:0.5rem">Early Registration</h3>
+          <p class="muted" style="margin:0">Register for classes before other students, ensuring you get the courses you need</p>
+        </div>
+        <div class="card">
+          <h3 style="margin-bottom:0.5rem">Smaller Classes</h3>
+          <p class="muted" style="margin:0">Honors courses typically have smaller class sizes for more personalized attention</p>
+        </div>
+        <div class="card">
+          <h3 style="margin-bottom:0.5rem">Research Mentoring</h3>
+          <p class="muted" style="margin:0">Access to research opportunities and faculty mentorship programs</p>
+        </div>
+        <div class="card">
+          <h3 style="margin-bottom:0.5rem">Enriched Curriculum</h3>
+          <p class="muted" style="margin:0">Challenging coursework that prepares you for university-level academics</p>
+        </div>
+        <div class="card">
+          <h3 style="margin-bottom:0.5rem">Networking</h3>
+          <p class="muted" style="margin:0">Connect with other high-achieving students and build lasting relationships</p>
+        </div>
+      </div>
+
+      <!-- CTA to Transfer Programs -->
+      <div style="margin-top:3rem; text-align:center; padding:3rem 2rem; background:linear-gradient(135deg, rgba(79,140,255,.15), rgba(255,165,82,.1)); border-radius:var(--radius); border:1px solid var(--stroke)">
+        <h3 style="font-size:1.75rem; margin-bottom:0.75rem">Connect Honors to Transfer Programs</h3>
+        <p class="muted" style="max-width:600px; margin:0 auto 1.5rem">Discover how Honors programs connect to TAP, H2H, and other transfer pathways to maximize your admission chances</p>
+        <a href="transfer-programs.html" class="btn btn--secondary">Explore Transfer Programs</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- College Lookup Tool -->
+  <section>
+    <div class="container">
+      <h2 style="text-align:center; margin-bottom:1rem">Find Your College's Honors Program</h2>
+      <p class="muted" style="text-align:center; max-width:700px; margin:0 auto 2rem">Select your community college to view specific honors program requirements and contact information.</p>
+      
+      <div class="card" style="max-width:800px; margin:0 auto; padding:2rem">
+        <label for="college-select" style="display:block; margin-bottom:0.75rem; font-weight:600; font-size:1.1rem">Select Your Community College</label>
+        <div style="display:flex; gap:1rem; flex-wrap:wrap">
+          <select id="college-select" style="flex:1; min-width:280px; padding:0.85rem 1rem; font-size:1rem; border:1px solid var(--stroke); border-radius:10px; background:var(--bg); color:var(--text)">
+            <option value="">-- Choose a College --</option>
+            
+            <optgroup label="Northern California">
+              <option value="american-river">American River College</option>
+              <option value="butte">Butte College</option>
+              <option value="cabrillo">Cabrillo College</option>
+              <option value="ccsf">City College of San Francisco</option>
+              <option value="alameda">College of Alameda</option>
+              <option value="marin">College of Marin</option>
+              <option value="san-mateo">College of San Mateo</option>
+              <option value="redwoods">College of the Redwoods</option>
+              <option value="sequoias">College of the Sequoias</option>
+              <option value="siskiyous">College of the Siskiyous</option>
+              <option value="contra-costa">Contra Costa College</option>
+              <option value="cosumnes">Cosumnes River College</option>
+              <option value="de-anza">De Anza College</option>
+              <option value="diablo-valley">Diablo Valley College</option>
+              <option value="feather-river">Feather River College</option>
+              <option value="foothill">Foothill College</option>
+              <option value="folsom-lake">Folsom Lake College</option>
+              <option value="laney">Laney College</option>
+              <option value="las-positas">Las Positas College</option>
+              <option value="lassen">Lassen College</option>
+              <option value="mendocino">Mendocino College</option>
+              <option value="merritt">Merritt College</option>
+              <option value="mission">Mission College</option>
+              <option value="napa-valley">Napa Valley College</option>
+              <option value="ohlone">Ohlone College</option>
+              <option value="reedley">Reedley College</option>
+              <option value="sacramento-city">Sacramento City College</option>
+              <option value="san-joaquin-delta">San Joaquin Delta College</option>
+              <option value="santa-rosa">Santa Rosa Junior College</option>
+              <option value="shasta">Shasta College</option>
+              <option value="sierra">Sierra College</option>
+              <option value="skyline">Skyline College</option>
+              <option value="solano">Solano Community College</option>
+              <option value="woodland">Woodland Community College</option>
+              <option value="yuba">Yuba College</option>
+            </optgroup>
+            
+            <optgroup label="Central California / Central Valley">
+              <option value="bakersfield">Bakersfield College</option>
+              <option value="cerro-coso">Cerro Coso Community College</option>
+              <option value="clovis">Clovis Community College</option>
+              <option value="columbia">Columbia College</option>
+              <option value="fresno-city">Fresno City College</option>
+              <option value="merced">Merced College</option>
+              <option value="modesto">Modesto Junior College</option>
+              <option value="porterville">Porterville College</option>
+              <option value="taft">Taft College</option>
+              <option value="west-hills-coalinga">West Hills College Coalinga</option>
+              <option value="west-hills-lemoore">West Hills College Lemoore</option>
+            </optgroup>
+            
+            <optgroup label="Los Angeles Area">
+              <option value="elac">East Los Angeles College</option>
+              <option value="el-camino">El Camino College</option>
+              <option value="glendale">Glendale Community College</option>
+              <option value="lacc">Los Angeles City College</option>
+              <option value="lahc">Los Angeles Harbor College</option>
+              <option value="lamission">Los Angeles Mission College</option>
+              <option value="pierce">Los Angeles Pierce College</option>
+              <option value="lasc">Los Angeles Southwest College</option>
+              <option value="lattc">Los Angeles Trade–Technical College</option>
+              <option value="lavc">Los Angeles Valley College</option>
+              <option value="pasadena">Pasadena City College</option>
+              <option value="smc">Santa Monica College</option>
+              <option value="wlac">West Los Angeles College</option>
+            </optgroup>
+            
+            <optgroup label="Orange County / Inland Empire">
+              <option value="chaffey">Chaffey College</option>
+              <option value="citrus">Citrus College</option>
+              <option value="coastline">Coastline College</option>
+              <option value="cypress">Cypress College</option>
+              <option value="fullerton">Fullerton College</option>
+              <option value="golden-west">Golden West College</option>
+              <option value="ivc">Irvine Valley College</option>
+              <option value="mt-sac">Mt. San Antonio College</option>
+              <option value="norco">Norco College</option>
+              <option value="occ">Orange Coast College</option>
+              <option value="rcc">Riverside City College</option>
+              <option value="saddleback">Saddleback College</option>
+              <option value="santiago-canyon">Santiago Canyon College</option>
+            </optgroup>
+            
+            <optgroup label="San Diego / Imperial">
+              <option value="cuyamaca">Cuyamaca College</option>
+              <option value="grossmont">Grossmont College</option>
+              <option value="imperial-valley">Imperial Valley College</option>
+              <option value="miracosta">MiraCosta College</option>
+              <option value="palomar">Palomar College</option>
+              <option value="sdcity">San Diego City College</option>
+              <option value="sdmesa">San Diego Mesa College</option>
+              <option value="sdmiramar">San Diego Miramar College</option>
+              <option value="southwestern">Southwestern College</option>
+            </optgroup>
+            
+            <optgroup label="Other Southern / Desert Regions">
+              <option value="antelope-valley">Antelope Valley College</option>
+              <option value="barstow">Barstow Community College</option>
+              <option value="desert">College of the Desert</option>
+              <option value="copper-mountain">Copper Mountain College</option>
+              <option value="crafton-hills">Crafton Hills College</option>
+              <option value="mt-san-jacinto">Mt. San Jacinto College</option>
+              <option value="palo-verde">Palo Verde College</option>
+              <option value="rio-hondo">Rio Hondo College</option>
+              <option value="sbvc">San Bernardino Valley College</option>
+              <option value="victor-valley">Victor Valley College</option>
+            </optgroup>
+          </select>
+          <button id="lookup-btn" class="btn btn--primary" style="padding:0.85rem 2rem">Look Up Requirements</button>
+        </div>
+
+        <!-- Results Display -->
+        <div id="results-container" style="display:none; margin-top:2.5rem; padding:2rem; background:var(--bg); border:2px solid var(--brand); border-radius:var(--radius); box-shadow:0 10px 40px rgba(79,140,255,.15)">
+          <h3 id="college-name" style="color:var(--brand); margin-bottom:2rem; padding-bottom:1rem; border-bottom:1px solid var(--stroke); font-size:1.75rem"></h3>
+          
+          <div style="margin-bottom:2.5rem">
+            <h4 style="color:var(--text); margin-bottom:1rem; font-size:1.2rem">Program Requirements</h4>
+            <ul id="requirements-list" style="list-style:none; padding-left:0">
+              <!-- Requirements will be populated here -->
+            </ul>
+          </div>
+
+          <div style="margin-bottom:2.5rem">
+            <h4 style="color:var(--text); margin-bottom:1rem; font-size:1.2rem">Completion Requirements</h4>
+            <ul id="completion-list" style="list-style:none; padding-left:0">
+              <!-- Completion requirements will be populated here -->
+            </ul>
+          </div>
+
+          <div style="background:var(--card); padding:1.75rem; border-radius:12px; border:1px solid var(--stroke)">
+            <h4 style="color:var(--text); margin-bottom:1rem; font-size:1.2rem">Contact Information</h4>
+            <p id="contact-details" class="muted" style="margin-bottom:0.75rem"></p>
+            <p id="website-link" style="margin:0"></p>
+          </div>
+        </div>
+
+        <!-- Placeholder Message -->
+        <div id="placeholder-message" style="margin-top:2rem; padding:1.75rem; background:rgba(255,165,82,.08); border-left:4px solid var(--brand-2); border-radius:10px">
+          <p class="muted" style="margin:0"><em><strong>Note:</strong> This is a placeholder lookup tool. Detailed honors program information for all California Community Colleges will be added soon. To contribute data for your college, please <a href="contact.html" class="link" style="color:var(--brand-2)">contact us</a>.</em></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Application Timeline -->
+  <section style="background:#0f1324">
+    <div class="container">
+      <h2 style="text-align:center; margin-bottom:2.5rem">Application Timeline & Getting Started</h2>
+      <div class="card" style="max-width:900px; margin:0 auto; padding:2.5rem">
+        <p style="font-size:1.1rem; margin-bottom:1.5rem">Honors program application timelines vary by college. Check with your specific community college for:</p>
+        <ul class="muted" style="margin-bottom:2rem">
+          <li style="margin-bottom:0.75rem">Application deadlines (typically in spring for fall entry)</li>
+          <li style="margin-bottom:0.75rem">Minimum GPA requirements (usually 3.0-3.5)</li>
+          <li style="margin-bottom:0.75rem">Required essays or personal statements</li>
+          <li style="margin-bottom:0.75rem">Faculty recommendations</li>
+          <li style="margin-bottom:0.75rem">Interview requirements (if applicable)</li>
+        </ul>
+        <div style="background:rgba(255,165,82,.1); padding:1.5rem; border-radius:10px; border-left:4px solid var(--brand-2)">
+          <p style="margin:0"><strong style="color:var(--brand-2); font-size:1.1rem">Pro Tip:</strong> <span style="color:var(--text)">Many students apply during their first semester at community college. Don't wait—start early!</span></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container row between start">
+      <div>
+        <div class="logo">CCTransfer</div>
+        <p class="muted">For students, by students. Not affiliated with CCC/UC/CSU.</p>
+      </div>
+      <nav class="footer-links">
+        <a href="resources.html">Resources</a>
+        <a href="opportunities.html">Opportunities</a>
+        <a href="honors.html">Honors</a>
+        <a href="financial-aid.html">Financial Aid</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+  <script src="js/honors.js" defer></script>
+</body>
+</html>
