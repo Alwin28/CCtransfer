@@ -1,1 +1,23 @@
 /* Main stylesheet - colors, typography, general styles */
+
+:root{
+  --bg:#0b1220;
+  --card:#0f172a;
+  --text:#e5eefc;
+  --muted:#a7b3c9;
+  --brand:#4f8cff;      /* primary */
+  --brand-2:#ffa552;    /* accent */
+  --stroke:#1f2a44;
+  --radius:16px;
+  --shadow:0 10px 30px rgba(0,0,0,.25);
+}
+
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0; font:16px/1.5 system-ui, -apple-system, Segoe UI, Roboto, Inter, Arial, sans-serif;
+  color:var(--text); background:linear-gradient(180deg,#071022, #0b1220 35%, #0b1220);
+}
+a{color:inherit; text-decoration:none}
+img{max-width:100%; display:block}
+.muted{color:var(--muted)}

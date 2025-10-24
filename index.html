@@ -4,3 +4,145 @@
 <!-- "Upcoming Highlights" section (TAG openings, FAFSA window) -->
 <!-- About the site + contact button -->
 <!-- Footer with "Last updated" auto-generated -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CCTransfer — Your California Community College Transfer Hub</title>
+
+  <!-- SEO / Social -->
+  <meta name="description" content="Deadlines, programs, resources, and step-by-step guidance to transfer from a California community college to a UC/CSU." />
+  <meta property="og:title" content="CCTransfer — California CC Transfer Hub" />
+  <meta property="og:description" content="Find programs, check deadlines, and get resources in one place." />
+  <meta property="og:type" content="website" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/layout.css" />
+  <link rel="stylesheet" href="css/components.css" />
+</head>
+<body>
+  <!-- Site Header / Nav -->
+  <header class="site-header">
+    <div class="container row between center">
+      <a class="logo" href="/">CCTransfer</a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav" id="siteNav">
+        <a href="transfer-programs.html">Programs</a>
+        <a href="deadlines.html">Deadlines</a>
+        <a href="resources.html">Resources</a>
+        <a href="opportunities.html">Opportunities</a>
+        <a href="campuses.html">Campuses</a>
+        <a href="contact.html" class="btn btn--primary">Get Help</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container">
+      <h1>Transfer from CC to UC/CSU — without the guesswork.</h1>
+      <p class="hero-sub">One hub for requirements, deadlines, and the exact steps to move from your California community college to your dream university.</p>
+
+      <div class="hero-cta">
+        <a class="btn btn--primary" href="transfer-programs.html">Find Your Program</a>
+        <a class="btn btn--ghost" href="deadlines.html">Check Deadlines</a>
+      </div>
+
+      <!-- Quick Finder (optional: wire to finder.js later) -->
+      <form class="quick-finder" action="transfer-programs.html" method="get">
+        <label>
+          Target school
+          <input name="target" type="text" placeholder="e.g., UCLA, UCSD, CSU Fullerton" />
+        </label>
+        <label>
+          Major
+          <input name="major" type="text" placeholder="e.g., Bioengineering, CS, Business" />
+        </label>
+        <button class="btn btn--secondary" type="submit">Search</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Value Props -->
+  <section class="features">
+    <div class="container grid-3">
+      <article class="card">
+        <h3>All Deadlines in One Place</h3>
+        <p>Application windows, TAG dates, transcripts, financial aid—auto-updated and easy to scan.</p>
+        <a href="deadlines.html" class="link">View deadlines →</a>
+      </article>
+
+      <article class="card">
+        <h3>Program Requirements</h3>
+        <p>Course plans and articulation info so you don’t waste units or miss prerequisites.</p>
+        <a href="transfer-programs.html" class="link">Explore programs →</a>
+      </article>
+
+      <article class="card">
+        <h3>Actionable Resources</h3>
+        <p>Checklists, advisors, scholarships, and campus contacts tailored to California CC students.</p>
+        <a href="resources.html" class="link">Browse resources →</a>
+      </article>
+    </div>
+  </section>
+
+  <!-- How It Works -->
+  <section class="how">
+    <div class="container grid-3">
+      <div class="step">
+        <span class="step-num">1</span>
+        <h4>Pick a target</h4>
+        <p>Choose UC/CSU + major to see exact requirements.</p>
+      </div>
+      <div class="step">
+        <span class="step-num">2</span>
+        <h4>Map your classes</h4>
+        <p>Follow a term-by-term plan matched to articulation.</p>
+      </div>
+      <div class="step">
+        <span class="step-num">3</span>
+        <h4>Hit the deadlines</h4>
+        <p>Never miss an app, transcript, or FAFSA date again.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Social proof / CTA -->
+  <section class="cta">
+    <div class="container">
+      <h2>Ready to plan your transfer?</h2>
+      <p>Start with your program or jump straight to the deadline calendar.</p>
+      <div class="hero-cta">
+        <a class="btn btn--primary" href="transfer-programs.html">Start Planning</a>
+        <a class="btn btn--ghost" href="deadlines.html">See Calendar</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container row between start">
+      <div>
+        <div class="logo">CCTransfer</div>
+        <p class="muted">For students, by students. Not affiliated with CCC/UC/CSU.</p>
+      </div>
+      <nav class="footer-links">
+        <a href="resources.html">Resources</a>
+        <a href="opportunities.html">Opportunities</a>
+        <a href="honors.html">Honors</a>
+        <a href="financial-aid.html">Financial Aid</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>
