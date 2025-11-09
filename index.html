@@ -18,10 +18,15 @@
   <meta property="og:description" content="Find programs, check deadlines, and get resources in one place." />
   <meta property="og:type" content="website" />
 
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
   <!-- Styles -->
   <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="css/layout.css" />
   <link rel="stylesheet" href="css/components.css" />
+  
 </head>
 <body>
   <!-- Site Header / Nav -->
@@ -47,7 +52,7 @@
   <!-- Hero -->
   <section class="hero">
     <div class="container">
-      <h1>Transfer from CC to UC/CSU — without the guesswork.</h1>
+      <h1>Transfer from CC to UC/CSU</h1>
       <p class="hero-sub">One hub for requirements, deadlines, and the exact steps to move from your California community college to your dream university.</p>
 
       <div class="hero-cta">
@@ -71,27 +76,78 @@
   </section>
 
   <!-- Value Props -->
-  <section class="features">
-    <div class="container grid-3">
-      <article class="card">
-        <h3>All Deadlines in One Place</h3>
-        <p>Application windows, TAG dates, transcripts, financial aid—auto-updated and easy to scan.</p>
-        <a href="deadlines.html" class="link">View deadlines →</a>
-      </article>
+<section class="features">
+  <div class="container grid-3">
+    <!-- Card 1 -->
+    <article class="card">
+      <div class="icon-circle" aria-hidden="true">
+        <svg class="icon"><use href="#icon-calendar"></use></svg>
+      </div>
+      <h3>All Deadlines in One Place</h3>
+      <p>Application windows, TAG dates, transcripts, and financial aid — all auto-updated and easy to scan.</p>
+      <a href="deadlines.html" class="link">View deadlines →</a>
+    </article>
 
-      <article class="card">
-        <h3>Program Requirements</h3>
-        <p>Course plans and articulation info so you don’t waste units or miss prerequisites.</p>
-        <a href="transfer-programs.html" class="link">Explore programs →</a>
-      </article>
+    <!-- Card 2 -->
+    <article class="card">
+      <div class="icon-circle" aria-hidden="true">
+        <svg class="icon"><use href="#icon-book"></use></svg>
+      </div>
+      <h3>Program Requirements</h3>
+      <p>Course plans and articulation info so you don’t waste units or miss prerequisites.</p>
+      <a href="transfer-programs.html" class="link">Explore programs →</a>
+    </article>
 
-      <article class="card">
-        <h3>Actionable Resources</h3>
-        <p>Checklists, advisors, scholarships, and campus contacts tailored to California CC students.</p>
-        <a href="resources.html" class="link">Browse resources →</a>
-      </article>
+    <!-- Card 3 -->
+    <article class="card">
+      <div class="icon-circle" aria-hidden="true">
+        <svg class="icon"><use href="#icon-layers"></use></svg>
+      </div>
+      <h3>Actionable Resources</h3>
+      <p>Checklists, advisors, scholarships, and campus contacts tailored to California CC students.</p>
+      <a href="resources.html" class="link">Browse resources →</a>
+    </article>
+  </div>
+</section>
+
+<!-- Article Categories -->
+<section class="features">
+  <div class="container">
+    <div class="section-head">
+      <h2>Article Categories</h2>
+      <a class="btn btn--ghost" href="resources.html">Browse all articles</a>
     </div>
-  </section>
+
+    <div class="category-grid">
+      <a class="category-card" href="transfer-programs.html">
+        <img src="https://images.unsplash.com/photo-1549880338-65ddcdfd017b?q=80&w=1200&auto=format&fit=crop" alt="Student studying in library" />
+        <div class="content">
+          <span class="chip">Programs</span>
+          <h3>Plan the exact classes to transfer</h3>
+          <p>Articulation, prerequisites, and pitfalls to avoid.</p>
+        </div>
+      </a>
+
+      <a class="category-card" href="deadlines.html">
+        <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=1200&auto=format&fit=crop" alt="Calendar and laptop" />
+        <div class="content">
+          <span class="chip">Deadlines</span>
+          <h3>Never miss a window again</h3>
+          <p>UC/CSU, TAG, FAFSA, transcripts — all in one view.</p>
+        </div>
+      </a>
+
+      <a class="category-card" href="resources.html">
+        <img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?q=80&w=1200&auto=format&fit=crop" alt="College campus courtyard" />
+        <div class="content">
+          <span class="chip">Resources</span>
+          <h3>Scholarships, advisors, checklists</h3>
+          <p>Tools tailored to California CC students.</p>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
 
   <!-- How It Works -->
   <section class="how">
@@ -142,6 +198,19 @@
       </nav>
     </div>
   </footer>
+
+  <!-- SVG Icon Sprite (shared across site) -->
+<svg style="display:none" aria-hidden="true" focusable="false">
+  <symbol id="icon-calendar" viewBox="0 0 24 24">
+    <path d="M7 2a1 1 0 0 1 1 1v1h8V3a1 1 0 1 1 2 0v1h1a2 2 0 0 1 2 2v13a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h1V3a1 1 0 0 1 1-1Zm12 8H5v9h14v-9Z"/>
+  </symbol>
+  <symbol id="icon-book" viewBox="0 0 24 24">
+    <path d="M4 4.5A2.5 2.5 0 0 1 6.5 2H20v17.5A2.5 2.5 0 0 1 17.5 22H6.5A2.5 2.5 0 0 1 4 19.5V4.5Zm14 14V4H6.5A.5.5 0 0 0 6 4.5v15a.5.5 0 0 0 .5.5h11a.5.5 0 0 0 .5-.5Z"/>
+  </symbol>
+  <symbol id="icon-layers" viewBox="0 0 24 24">
+    <path d="M12 2 1 7l11 5 11-5-11-5Zm0 9L1 6v3l11 5 11-5V6l-11 5Zm0 4L1 10v3l11 5 11-5v-3l-11 5Z"/>
+  </symbol>
+</svg>
 
   <script src="js/main.js" defer></script>
 </body>

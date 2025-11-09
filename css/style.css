@@ -1,19 +1,56 @@
 :root {
-  /* 🎓 UCLA-Inspired Palette */
-  --ucla-blue: #2774AE;     /* main brand blue */
-  --jonquil:   #FFD100;     /* yellow accent */
-  --indigo:    #003B5C;     /* deep blue (nav/footer) */
-  --oxford:    #0A2342;     /* darkest text blue */
-  --smoke:     #F5F5F5;     /* light background */
+  /* 🎓 UCLA-inspired palette (primary tokens) */
+  --ucla-blue: #2774AE;   /* primary */
+  --jonquil:   #FFD100;   /* accent */
+  --indigo:    #003B5C;   /* deep blue (nav/footer) */
+  --oxford:    #0A2342;   /* darkest text */
+  --smoke:     #F5F5F5;   /* light bg */
 
-  /* Tokens applied across layout */
+  /* App-wide tokens */
   --bg: var(--smoke);
   --card: #ffffff;
   --text: var(--oxford);
   --muted: rgba(10, 35, 66, 0.7);
-  --brand: var(--ucla-blue);   /* primary */
-  --brand-2: var(--jonquil);   /* accent */
+  --brand: var(--ucla-blue);
+  --brand-2: var(--jonquil);
   --stroke: rgba(0, 0, 0, 0.08);
   --radius: 16px;
   --shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+
+  /* === Aliases so older rules keep working (used in layout.css) === */
+  --uc-blue: var(--ucla-blue);
+  --dark-blue: var(--indigo);
+  --uc-gold: var(--jonquil);
+  --white: #ffffff;
+  --light-gold: #ffe08a;
+  --light-gray: #f5f7fb;
+  --medium-gray: #d6dbe6;
+}
+
+/* ===== Global base (moved here from components.css) ==================== */
+html, body { height: 100%; }
+body {
+  margin: 0;
+  font: 16px/1.5 Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  color: var(--text);
+  background: linear-gradient(180deg, #dce9f5 0%, var(--smoke) 50%, #ffffff 100%);
+}
+
+/* Utilities shared by pages/components */
+.container { max-width: 1200px; margin: 0 auto; padding: 0 2rem; }
+.row { display: flex; gap: 14px; }
+.between { justify-content: space-between; }
+.center { align-items: center; }
+.start { align-items: flex-start; }
+.grid-3 { display: grid; grid-template-columns: 1fr; gap: 1.5rem; }
+@media (min-width: 760px) { .grid-3 { grid-template-columns: repeat(3, 1fr); } }
+.muted { color: var(--muted); }
+
+/* === Modern look tokens === */
+:root{
+  --radius: 18px;             /* bump up roundness */
+  --radius-xl: 28px;
+  --shadow-sm: 0 6px 16px rgba(9, 18, 33, .08);
+  --shadow-md: 0 10px 28px rgba(9, 18, 33, .12);
+  --shadow-lg: 0 18px 42px rgba(9, 18, 33, .16);
 }
