@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Counselor FAQ — Transfer Process Questions — CCTransfer</title>
+
+  <!-- SEO / Social -->
+  <meta name="description" content="Frequently asked questions about the community college transfer process answered by experienced counselors." />
+  <meta property="og:title" content="Counselor FAQ — CCTransfer" />
+  <meta property="og:description" content="Get answers to common transfer questions from community college counselors." />
+  <meta property="og:type" content="website" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/layout.css" />
+  <link rel="stylesheet" href="css/components.css" />
+  
+  <style>
+    /* FAQ Specific Styles */
+    .faq-hero {
+      padding: 4rem 0 3rem;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+      text-align: center;
+    }
+    
+    .faq-hero h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+    
+    .faq-hero p {
+      font-size: 1.125rem;
+      opacity: 0.95;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+    
+    .faq-banner {
+      background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+      padding: 1.5rem;
+      border-radius: 12px;
+      margin: 2rem 0;
+      text-align: center;
+      color: white;
+    }
+    
+    .faq-banner h2 {
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+    }
+    
+    .faq-banner p {
+      opacity: 0.95;
+      margin: 0;
+    }
+    
+    .faq-content {
+      padding: 3rem 0;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    
+    .faq-intro {
+      margin-bottom: 2rem;
+      padding: 1.5rem;
+      background: #f8fafc;
+      border-left: 4px solid #667eea;
+      border-radius: 8px;
+    }
+    
+    .faq-intro h2 {
+      font-size: 1.5rem;
+      color: #333;
+      margin-bottom: 0.75rem;
+    }
+    
+    .faq-intro p {
+      color: #64748b;
+      line-height: 1.6;
+      margin: 0;
+    }
+    
+    .faq-list {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+    
+    .faq-item {
+      background: white;
+      border: 2px solid #e2e8f0;
+      border-radius: 12px;
+      padding: 1.75rem;
+      transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
+    }
+    
+    .faq-item:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+      border-color: #667eea;
+    }
+    
+    .faq-question {
+      display: flex;
+      align-items: flex-start;
+      gap: 1rem;
+    }
+    
+    .faq-icon {
+      flex-shrink: 0;
+      width: 32px;
+      height: 32px;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 1.125rem;
+    }
+    
+    .faq-question h3 {
+      font-size: 1.125rem;
+      color: #1e293b;
+      line-height: 1.6;
+      margin: 0;
+      font-weight: 600;
+    }
+    
+    .faq-answer {
+      margin-top: 1rem;
+      padding-left: 2.75rem;
+      color: #64748b;
+      line-height: 1.7;
+      display: none;
+    }
+    
+    .faq-item.active .faq-answer {
+      display: block;
+    }
+    
+    .faq-placeholder {
+      font-style: italic;
+      color: #94a3b8;
+    }
+    
+    .coming-soon {
+      text-align: center;
+      padding: 2rem;
+      background: #fef3c7;
+      border-radius: 8px;
+      margin-top: 2rem;
+    }
+    
+    .coming-soon p {
+      font-size: 1.125rem;
+      color: #92400e;
+      margin: 0;
+    }
+  </style>
+</head>
+<body>
+  <!-- Site Header / Nav -->
+  <header class="site-header">
+    <div class="container row between center">
+      <a class="logo" href="/">CCTransfer</a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav" id="siteNav">
+        <a href="transfer-programs.html">Programs</a>
+        <a href="deadlines.html">Deadlines</a>
+        <a href="resources.html">Resources</a>
+        <a href="opportunities.html">Opportunities</a>
+        <a href="campuses.html">Campuses</a>
+        <a href="contact.html" class="btn btn--primary">Get Help</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- FAQ Hero -->
+  <section class="faq-hero">
+    <div class="container">
+      <h1>Counselor FAQ</h1>
+      <p>Real questions about the transfer process answered by experienced community college counselors.</p>
+    </div>
+  </section>
+
+  <!-- FAQ Content -->
+  <section class="faq-content">
+    <div class="container">
+      <!-- Banner -->
+      <div class="faq-banner">
+        <h2>📋 Questions Asked to IVC Counselors</h2>
+        <p>These questions have been submitted to Irvine Valley College counselors to help students navigate internships, research opportunities, and the transfer process.</p>
+      </div>
+
+      <!-- Introduction -->
+      <div class="faq-intro">
+        <h2>About This FAQ</h2>
+        <p>We've compiled common questions from community college students about internships, research opportunities, and transfer preparation. Answers will be added as counselors provide their insights.</p>
+      </div>
+
+      <!-- FAQ List -->
+      <div class="faq-list">
+        <!-- Question 1 -->
+        <div class="faq-item">
+          <div class="faq-question">
+            <div class="faq-icon">Q</div>
+            <h3>What are some internships that past IVC honors or STEM students have been accepted into?</h3>
+          </div>
+          <div class="faq-answer">
+            <p class="faq-placeholder">Answer coming soon from IVC counselors...</p>
+          </div>
+        </div>
+
+        <!-- Question 2 -->
+        <div class="faq-item">
+          <div class="faq-question">
+            <div class="faq-icon">Q</div>
+            <h3>Does IVC have any formal partnerships with hospitals, labs, or research institutions (like CHOC, UCI, or City of Hope)?</h3>
+          </div>
+          <div class="faq-answer">
+            <p class="faq-placeholder">Answer coming soon from IVC counselors...</p>
+          </div>
+        </div>
+
+        <!-- Question 3 -->
+        <div class="faq-item">
+          <div class="faq-question">
+            <div class="faq-icon">Q</div>
+            <h3>Are there any on-campus research projects or faculty-led internships that community college students can join?</h3>
+          </div>
+          <div class="faq-answer">
+            <p class="faq-placeholder">Answer coming soon from IVC counselors...</p>
+          </div>
+        </div>
+
+        <!-- Question 4 -->
+        <div class="faq-item">
+          <div class="faq-question">
+            <div class="faq-icon">Q</div>
+            <h3>Does the IVC Career Center or Honors Program maintain a list of internships open to community college students?</h3>
+          </div>
+          <div class="faq-answer">
+            <p class="faq-placeholder">Answer coming soon from IVC counselors...</p>
+          </div>
+        </div>
+
+        <!-- Question 5 -->
+        <div class="faq-item">
+          <div class="faq-question">
+            <div class="faq-icon">Q</div>
+            <h3>How can students find entry-level or no-experience-required internships related to pre-med, research, or engineering? Are there any available internships?</h3>
+          </div>
+          <div class="faq-answer">
+            <p class="faq-placeholder">Answer coming soon from IVC counselors...</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Coming Soon Notice -->
+      <div class="coming-soon">
+        <p>💡 More questions will be added soon. Have a question? <a href="contact.html" style="color: #92400e; text-decoration: underline;">Contact us</a>.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container row between start">
+      <div>
+        <div class="logo">CCTransfer</div>
+        <p class="muted">For students, by students. Not affiliated with CCC/UC/CSU.</p>
+      </div>
+      <nav class="footer-links">
+        <a href="resources.html">Resources</a>
+        <a href="opportunities.html">Opportunities</a>
+        <a href="honors.html">Honors</a>
+        <a href="financial-aid.html">Financial Aid</a>
+        <a href="counselor-faq.html">Counselor FAQ</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+  <script>
+    // Optional: Add click to expand FAQ items
+    document.querySelectorAll('.faq-item').forEach(item => {
+      item.addEventListener('click', () => {
+        item.classList.toggle('active');
+      });
+    });
+  </script>
+</body>
+</html>
