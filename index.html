@@ -1,217 +1,355 @@
-<!-- Landing Page -->
-<!-- Hero section: "All California CC Transfer Resources in One Place" -->
-<!-- Featured buttons → "Transfer Programs," "Opportunities," "Deadlines" -->
-<!-- "Upcoming Highlights" section (TAG openings, FAFSA window) -->
-<!-- About the site + contact button -->
-<!-- Footer with "Last updated" auto-generated -->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
+  <meta charset="UTF-8" />
+  <title>CATransferStudents.com</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>CCTransfer — Your California Community College Transfer Hub</title>
-
-  <!-- SEO / Social -->
-  <meta name="description" content="Deadlines, programs, resources, and step-by-step guidance to transfer from a California community college to a UC/CSU." />
-  <meta property="og:title" content="CCTransfer — California CC Transfer Hub" />
-  <meta property="og:description" content="Find programs, check deadlines, and get resources in one place." />
-  <meta property="og:type" content="website" />
+  <meta name="description" content="For transfer students, by transfer students." />
 
   <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:wght@500;700&display=swap" rel="stylesheet">
 
-  <!-- Styles -->
-  <link rel="stylesheet" href="css/style.css" />
-  <link rel="stylesheet" href="css/layout.css" />
-  <link rel="stylesheet" href="css/components.css" />
-  
+  <!-- CSS (order matters) -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
 </head>
 <body>
-  <!-- Site Header / Nav -->
+  <!-- HEADER -->
   <header class="site-header">
-    <div class="container row between center">
-      <a class="logo" href="/">CCTransfer</a>
+    <div class="container site-header-inner">
+      <div class="site-logo">
+        CATransferStudents.com
+        <span>For transfer students, by transfer students.</span>
+      </div>
 
-      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
-
-      <nav class="nav" id="siteNav">
+      <nav class="site-nav">
         <a href="transfer-programs.html">Programs</a>
-        <a href="deadlines.html">Deadlines</a>
-        <a href="resources.html">Resources</a>
         <a href="opportunities.html">Opportunities</a>
+        <a href="deadlines.html">Deadlines</a>
+        <a href="resources.html">Guides</a>
         <a href="campuses.html">Campuses</a>
-        <a href="contact.html" class="btn btn--primary">Get Help</a>
+        <a href="contact.html">Contact</a>
       </nav>
+
+      <a href="form.html" class="btn btn-primary">Start your transfer plan</a>
     </div>
   </header>
 
-  <!-- Hero -->
-  <section class="hero">
-    <div class="container">
-      <h1>Transfer from CC to UC/CSU</h1>
-      <p class="hero-sub">One hub for requirements, deadlines, and the exact steps to move from your California community college to your dream university.</p>
+  <main>
+    <!-- HERO -->
+    <section class="hero section">
+      <div class="container split">
+        <div>
+          <div class="hero-eyebrow">California Community College transfers</div>
+          <h1 class="hero-title">
+            All your transfer resources, in one place.
+          </h1>
+          <p class="hero-subtitle">
+            Transfer from a California community college to UC, CSU, or private universities with clear requirements, deadlines, and step-by-step guidance.
+          </p>
 
-      <div class="hero-cta">
-        <a class="btn btn--primary" href="transfer-programs.html">Find Your Program</a>
-        <a class="btn btn--ghost" href="deadlines.html">Check Deadlines</a>
-      </div>
-
-      <!-- Quick Finder (optional: wire to finder.js later) -->
-      <form class="quick-finder" action="transfer-programs.html" method="get">
-        <label>
-          Target school
-          <input name="target" type="text" placeholder="e.g., UCLA, UCSD, CSU Fullerton" />
-        </label>
-        <label>
-          Major
-          <input name="major" type="text" placeholder="e.g., Bioengineering, CS, Business" />
-        </label>
-        <button class="btn btn--secondary" type="submit">Search</button>
-      </form>
-    </div>
-  </section>
-
-  <!-- Value Props -->
-<section class="features">
-  <div class="container grid-3">
-    <!-- Card 1 -->
-    <article class="card">
-      <div class="icon-circle" aria-hidden="true">
-        <svg class="icon"><use href="#icon-calendar"></use></svg>
-      </div>
-      <h3>All Deadlines in One Place</h3>
-      <p>Application windows, TAG dates, transcripts, and financial aid — all auto-updated and easy to scan.</p>
-      <a href="deadlines.html" class="link">View deadlines →</a>
-    </article>
-
-    <!-- Card 2 -->
-    <article class="card">
-      <div class="icon-circle" aria-hidden="true">
-        <svg class="icon"><use href="#icon-book"></use></svg>
-      </div>
-      <h3>Program Requirements</h3>
-      <p>Course plans and articulation info so you don’t waste units or miss prerequisites.</p>
-      <a href="transfer-programs.html" class="link">Explore programs →</a>
-    </article>
-
-    <!-- Card 3 -->
-    <article class="card">
-      <div class="icon-circle" aria-hidden="true">
-        <svg class="icon"><use href="#icon-layers"></use></svg>
-      </div>
-      <h3>Actionable Resources</h3>
-      <p>Checklists, advisors, scholarships, and campus contacts tailored to California CC students.</p>
-      <a href="resources.html" class="link">Browse resources →</a>
-    </article>
-  </div>
-</section>
-
-<!-- Article Categories -->
-<section class="features">
-  <div class="container">
-    <div class="section-head">
-      <h2>Article Categories</h2>
-      <a class="btn btn--ghost" href="resources.html">Browse all articles</a>
-    </div>
-
-    <div class="category-grid">
-      <a class="category-card" href="transfer-programs.html">
-        <img src="https://images.unsplash.com/photo-1549880338-65ddcdfd017b?q=80&w=1200&auto=format&fit=crop" alt="Student studying in library" />
-        <div class="content">
-          <span class="chip">Programs</span>
-          <h3>Plan the exact classes to transfer</h3>
-          <p>Articulation, prerequisites, and pitfalls to avoid.</p>
+          <div class="hero-actions">
+            <a href="transfer-programs.html" class="btn btn-primary">
+              Find your program
+            </a>
+            <a href="deadlines.html" class="btn btn-secondary">
+              Check deadlines
+            </a>
+          </div>
         </div>
-      </a>
 
-      <a class="category-card" href="deadlines.html">
-        <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=1200&auto=format&fit=crop" alt="Calendar and laptop" />
-        <div class="content">
-          <span class="chip">Deadlines</span>
-          <h3>Never miss a window again</h3>
-          <p>UC/CSU, TAG, FAFSA, transcripts — all in one view.</p>
+        <aside>
+          <div class="hero-card">
+            <!-- Hero image: replace with your own UCLA image file -->
+            <div class="hero-card-image"
+                 style="background-image: url('images/ucla-hero.jpg');">
+            </div>
+            <div class="hero-card-body">
+              <h2>See upcoming deadlines at a glance.</h2>
+              <p>
+                Pull UC, CSU, and private school deadlines into one simple view so you never miss an application, transcript, or FAFSA window.
+              </p>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- VALUE PROPS / FEATURES -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Why use CATransferStudents.com?</h2>
+          <p class="section-subtitle">
+            Built by current and former transfer students to give you clarity, not noise.
+          </p>
         </div>
-      </a>
 
-      <a class="category-card" href="resources.html">
-        <img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?q=80&w=1200&auto=format&fit=crop" alt="College campus courtyard" />
-        <div class="content">
-          <span class="chip">Resources</span>
-          <h3>Scholarships, advisors, checklists</h3>
-          <p>Tools tailored to California CC students.</p>
+        <div class="feature-grid grid-3">
+          <!-- Card 1 -->
+          <article class="feature-card">
+            <div class="feature-icon">📅</div>
+            <h3 class="feature-title">All deadlines in one place</h3>
+            <p class="text-muted">
+              Application windows, TAG dates, transcripts, and financial aid — organized by term and campus.
+            </p>
+            <a href="deadlines.html" class="feature-link">View deadlines →</a>
+          </article>
+
+          <!-- Card 2 -->
+          <article class="feature-card">
+            <div class="feature-icon">📘</div>
+            <h3 class="feature-title">Program requirements</h3>
+            <p class="text-muted">
+              Course plans and articulation guidance so you don’t waste units or miss key prerequisites.
+            </p>
+            <a href="transfer-programs.html" class="feature-link">Explore programs →</a>
+          </article>
+
+          <!-- Card 3 -->
+          <article class="feature-card">
+            <div class="feature-icon">✅</div>
+            <h3 class="feature-title">Actionable resources</h3>
+            <p class="text-muted">
+              Checklists, scholarships, and advisor tips tailored specifically to California CC students.
+            </p>
+            <a href="resources.html" class="feature-link">Browse resources →</a>
+          </article>
         </div>
-      </a>
-    </div>
-  </div>
-</section>
+      </div>
+    </section>
 
-  <!-- How It Works -->
-  <section class="how">
-    <div class="container grid-3">
-      <div class="step">
-        <span class="step-num">1</span>
-        <h4>Pick a target</h4>
-        <p>Choose UC/CSU + major to see exact requirements.</p>
-      </div>
-      <div class="step">
-        <span class="step-num">2</span>
-        <h4>Map your classes</h4>
-        <p>Follow a term-by-term plan matched to articulation.</p>
-      </div>
-      <div class="step">
-        <span class="step-num">3</span>
-        <h4>Hit the deadlines</h4>
-        <p>Never miss an app, transcript, or FAFSA date again.</p>
-      </div>
-    </div>
-  </section>
+    <!-- SEARCH BLOCK -->
+    <section class="section search-section">
+      <div class="container">
+        <div class="search-card">
+          <h2 class="section-title">Find a school or program</h2>
+          <p class="section-subtitle">
+            Search by campus, major, or transfer program to jump directly into what matters most.
+          </p>
 
-  <!-- Social proof / CTA -->
-  <section class="cta">
-    <div class="container">
-      <h2>Ready to plan your transfer?</h2>
-      <p>Start with your program or jump straight to the deadline calendar.</p>
-      <div class="hero-cta">
-        <a class="btn btn--primary" href="transfer-programs.html">Start Planning</a>
-        <a class="btn btn--ghost" href="deadlines.html">See Calendar</a>
-      </div>
-    </div>
-  </section>
+          <form class="search-input-row" action="transfer-programs.html" method="get">
+            <input
+              type="text"
+              name="q"
+              placeholder="Try &quot;UCLA CS&quot; or &quot;UC Davis TAG Psychology&quot;"
+            />
+            <button type="submit" class="btn btn-primary">Search</button>
+          </form>
 
-  <!-- Footer -->
+          <div class="search-chips">
+            <button type="button" class="chip">UC Davis TAG</button>
+            <button type="button" class="chip">CSU Long Beach</button>
+            <button type="button" class="chip">Computer Science</button>
+            <button type="button" class="chip">Psychology</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ARTICLE CATEGORIES (reframed using existing styles) -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Article categories</h2>
+          <p class="section-subtitle">
+            Deep dives and guides written from real transfer experience — not generic blog posts.
+          </p>
+        </div>
+
+        <div class="feature-grid grid-3">
+          <article class="feature-card">
+            <h3 class="feature-title">Programs</h3>
+            <p class="text-muted">
+              Plan the exact classes you need to transfer, with articulation and major prep in mind.
+            </p>
+            <a href="transfer-programs.html" class="feature-link">View program guides →</a>
+          </article>
+
+          <article class="feature-card">
+            <h3 class="feature-title">Deadlines</h3>
+            <p class="text-muted">
+              UC app windows, CSU priority filing, TAG, FAFSA, and transcript timing — all explained.
+            </p>
+            <a href="deadlines.html" class="feature-link">See deadline guides →</a>
+          </article>
+
+          <article class="feature-card">
+            <h3 class="feature-title">Resources</h3>
+            <p class="text-muted">
+              Scholarships, honors programs, research, and campus support services that actually help.
+            </p>
+            <a href="resources.html" class="feature-link">Browse all articles →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- HOW IT WORKS -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">How it works</h2>
+          <p class="section-subtitle">
+            A simple flow you can follow from day one at your CC all the way to your acceptance email.
+          </p>
+        </div>
+
+        <div class="steps-grid">
+          <article class="step-card">
+            <div class="step-number">Step 1</div>
+            <h3 class="feature-title">Pick your targets</h3>
+            <p class="text-muted">
+              Choose UC, CSU, and private campuses plus your major to see what each school expects.
+            </p>
+          </article>
+
+          <article class="step-card">
+            <div class="step-number">Step 2</div>
+            <h3 class="feature-title">Map your classes</h3>
+            <p class="text-muted">
+              Align your CC course plan with official articulation and campus-specific recommendations.
+            </p>
+          </article>
+
+          <article class="step-card">
+            <div class="step-number">Step 3</div>
+            <h3 class="feature-title">Track your deadlines</h3>
+            <p class="text-muted">
+              Keep applications, transcripts, and financial aid dates in one timeline you won’t ignore.
+            </p>
+          </article>
+
+          <article class="step-card">
+            <div class="step-number">Step 4</div>
+            <h3 class="feature-title">Finish strong</h3>
+            <p class="text-muted">
+              Use essay tips, checklists, and examples from successful transfer students to polish your application.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA BAND -->
+    <section class="section" style="background: var(--color-primary);">
+      <div class="container">
+        <div class="section-header" style="margin-bottom: var(--space-4);">
+          <h2 class="section-title" style="color: #ffffff;">
+            Ready to plan your transfer?
+          </h2>
+          <p class="section-subtitle" style="color: #E5E7EB;">
+            Start with your target programs or jump straight to the deadline calendar.
+          </p>
+        </div>
+
+        <div class="hero-actions">
+          <a href="transfer-programs.html" class="btn btn-secondary" style="background:#ffffff; color: var(--color-primary-strong);">
+            Start planning
+          </a>
+          <a href="deadlines.html" class="btn btn-outline" style="border-color:#ffffff; color:#ffffff;">
+            See calendar
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- NEWSLETTER / REMINDERS -->
+    <section class="section newsletter">
+      <div class="container newsletter-inner">
+        <div>
+          <h2 class="section-title" style="color: var(--color-text-on-dark);">
+            Never miss a deadline again.
+          </h2>
+          <p class="section-subtitle" style="color: #E5E7EB;">
+            Get reminders for upcoming UC, CSU, and private school deadlines, plus new guides created by current and former transfer students.
+          </p>
+        </div>
+
+        <form class="newsletter-input-row">
+          <input type="email" placeholder="Enter your email" required />
+          <button type="submit" class="btn btn-primary">Get reminders</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
   <footer class="site-footer">
-    <div class="container row between start">
-      <div>
-        <div class="logo">CCTransfer</div>
-        <p class="muted">For students, by students. Not affiliated with CCC/UC/CSU.</p>
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="site-logo">
+            CATransferStudents.com
+          </div>
+          <p style="margin-top: var(--space-3); color: #E5E7EB; max-width: 22rem;">
+            For transfer students, by transfer students. Not affiliated with the California Community Colleges, UC, CSU, or any individual campus.
+          </p>
+        </div>
+
+        <div>
+          <div class="footer-heading">Explore</div>
+          <div class="footer-links">
+            <a href="transfer-programs.html">Programs</a>
+            <a href="opportunities.html">Opportunities</a>
+            <a href="deadlines.html">Deadlines</a>
+          </div>
+        </div>
+
+        <div>
+          <div class="footer-heading">Help</div>
+          <div class="footer-links">
+            <a href="resources.html">Guides</a>
+            <a href="financial-aid.html">Financial aid</a>
+            <a href="contact.html">Contact</a>
+          </div>
+        </div>
+
+        <div>
+          <div class="footer-heading">Systems</div>
+          <div class="footer-links">
+            <span>UC campuses</span>
+            <span>CSU campuses</span>
+            <span>Private universities</span>
+          </div>
+        </div>
       </div>
-      <nav class="footer-links">
-        <a href="resources.html">Resources</a>
-        <a href="opportunities.html">Opportunities</a>
-        <a href="honors.html">Honors</a>
-        <a href="financial-aid.html">Financial Aid</a>
-        <a href="contact.html">Contact</a>
-      </nav>
+
+      <div class="footer-bottom">
+        <p>Last updated: <span id="last-updated"></span></p>
+      </div>
     </div>
   </footer>
 
-  <!-- SVG Icon Sprite (shared across site) -->
-<svg style="display:none" aria-hidden="true" focusable="false">
-  <symbol id="icon-calendar" viewBox="0 0 24 24">
-    <path d="M7 2a1 1 0 0 1 1 1v1h8V3a1 1 0 1 1 2 0v1h1a2 2 0 0 1 2 2v13a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h1V3a1 1 0 0 1 1-1Zm12 8H5v9h14v-9Z"/>
-  </symbol>
-  <symbol id="icon-book" viewBox="0 0 24 24">
-    <path d="M4 4.5A2.5 2.5 0 0 1 6.5 2H20v17.5A2.5 2.5 0 0 1 17.5 22H6.5A2.5 2.5 0 0 1 4 19.5V4.5Zm14 14V4H6.5A.5.5 0 0 0 6 4.5v15a.5.5 0 0 0 .5.5h11a.5.5 0 0 0 .5-.5Z"/>
-  </symbol>
-  <symbol id="icon-layers" viewBox="0 0 24 24">
-    <path d="M12 2 1 7l11 5 11-5-11-5Zm0 9L1 6v3l11 5 11-5V6l-11 5Zm0 4L1 10v3l11 5 11-5v-3l-11 5Z"/>
-  </symbol>
-</svg>
+  <!-- SVG Icon Sprite (kept for future use if you want icons later) -->
+  <svg style="display:none" aria-hidden="true" focusable="false">
+    <symbol id="icon-calendar" viewBox="0 0 24 24">
+      <path d="M7 2a1 1 0 0 1 1 1v1h8V3a1 1 0 1 1 2 0v1h1a2 2 0 0 1 2 2v13a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h1V3a1 1 0 0 1 1-1Zm12 8H5v9h14v-9Z"/>
+    </symbol>
+    <symbol id="icon-book" viewBox="0 0 24 24">
+      <path d="M4 4.5A2.5 2.5 0 0 1 6.5 2H20v17.5A2.5 2.5 0 0 1 17.5 22H6.5A2.5 2.5 0 0 1 4 19.5V4.5Zm14 14V4H6.5A.5.5 0 0 0 6 4.5v15a.5.5 0 0 0 .5.5h11a.5.5 0 0 0 .5-.5Z"/>
+    </symbol>
+    <symbol id="icon-layers" viewBox="0 0 24 24">
+      <path d="M12 2 1 7l11 5 11-5-11-5Zm0 9L1 6v3l11 5 11-5V6l-11 5Zm0 4L1 10v3l11 5 11-5v-3l-11 5Z"/>
+    </symbol>
+  </svg>
 
+  <!-- JS -->
   <script src="js/main.js" defer></script>
+  <script>
+    // Optional: auto-fill "Last updated" in footer
+    const lastUpdatedEl = document.getElementById('last-updated');
+    if (lastUpdatedEl) {
+      const d = new Date(document.lastModified);
+      lastUpdatedEl.textContent = d.toLocaleDateString('en-US', {
+        year: 'numeric',
+        month: 'short',
+        day: 'numeric'
+      });
+    }
+  </script>
 </body>
 </html>

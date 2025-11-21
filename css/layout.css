@@ -1,150 +1,185 @@
-/* Layout styles - grid, flexbox, responsive design */
+/* ================================
+   LAYOUT.CSS — STRUCTURE ONLY
+   (Containers, grids, splits, spacing, responsive)
+   ================================ */
 
+/* Container */
 .container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 2rem;
+  max-width: var(--container-max);
+  margin-inline: auto;
+  padding-inline: var(--container-padding);
 }
 
-.main-content { min-height: calc(100vh - 200px); }
-.content-section { margin-bottom: 4rem; }
-
-/* Hero Banner (not currently used by index.html; safe to keep for later) */
-.hero-banner {
-  background: linear-gradient(135deg, var(--uc-blue) 0%, var(--dark-blue) 100%);
-  color: var(--white);
-  padding: 4rem 0;
-  text-align: center;
-  margin-bottom: 3rem;
-}
-.hero-banner h1 {
-  color: var(--white);
-  font-size: 3rem;
-  margin-bottom: 0.5rem;
-}
-.hero-banner p {
-  font-size: 1.25rem;
-  color: var(--light-gold);
-  max-width: 700px;
-  margin: 0 auto;
+/* Section spacing */
+.section {
+  padding-block: var(--space-10);
 }
 
-/* Benefits Grid */
-.benefits-grid {
+.section-header {
+  margin-bottom: var(--space-6);
+}
+
+.section-title {
+  font-size: var(--fs-h2);
+  line-height: var(--lh-h2);
+  margin-bottom: var(--space-2);
+}
+
+.section-subtitle {
+  color: var(--color-text-muted);
+  max-width: 36rem;
+}
+
+/* =========================================
+   TWO-COLUMN SPLIT (Hero + other wide layouts)
+   ========================================= */
+.split {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 1.5rem;
-  margin-bottom: 2rem;
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
+  gap: var(--space-8);
+  align-items: center;
 }
 
-/* Info Box */
-.info-box {
-  background-color: var(--light-gray);
-  border-left: 4px solid var(--uc-gold);
-  padding: 1.5rem;
-  margin-top: 1.5rem;
-  border-radius: 4px;
-}
-.info-box h3 {
-  color: var(--uc-blue);
-  margin-bottom: 0.75rem;
-  font-size: 1.25rem;
+@media (max-width: 1024px) {
+  .split {
+    grid-template-columns: 1fr;
+  }
 }
 
-/* CTA Box */
-.cta-box {
-  background: linear-gradient(135deg, var(--uc-blue) 0%, var(--dark-blue) 100%);
-  color: var(--white);
-  padding: 2rem;
-  border-radius: 8px;
-  text-align: center;
-  margin-top: 2.5rem;
-}
-.cta-box h3 { color: var(--white); margin-bottom: 0.5rem; }
-.cta-box p { color: var(--light-gold); margin-bottom: 1.5rem; }
-
-/* Lookup Tool */
-.lookup-tool {
-  background-color: var(--light-gray);
-  padding: 2rem;
-  border-radius: 8px;
-  margin-top: 1.5rem;
-}
-.search-box { margin-bottom: 2rem; }
-.search-box label {
-  display: block; margin-bottom: 0.5rem; font-weight: 600; color: var(--uc-blue);
-}
-.college-dropdown {
-  width: 100%; max-width: 500px; padding: 0.75rem; font-size: 1rem;
-  border: 2px solid var(--medium-gray); border-radius: 4px; margin-bottom: 1rem; background-color: var(--white);
-}
-.college-dropdown:focus { outline: none; border-color: var(--uc-gold); }
-
-/* Results Container */
-.results-container {
-  background-color: var(--white);
-  padding: 2rem;
-  border-radius: 8px;
-  border: 2px solid var(--uc-gold);
-  margin-top: 1.5rem;
-}
-.results-content h3 {
-  color: var(--uc-blue);
-  font-size: 1.75rem;
-  margin-bottom: 1.5rem;
-  padding-bottom: 0.75rem;
-  border-bottom: 3px solid var(--uc-gold);
-}
-.requirement-section { margin-bottom: 2rem; }
-.requirement-section h4 { color: var(--uc-blue); margin-bottom: 1rem; }
-.requirement-section ul { list-style-type: none; margin-left: 0; }
-.requirement-section li { padding-left: 1.5rem; position: relative; margin-bottom: 0.75rem; }
-.requirement-section li:before {
-  content: "●"; color: var(--uc-gold); font-weight: bold; position: absolute; left: 0;
+/* =========================================
+   GRID UTILITIES (3-column, 2-column, auto)
+   ========================================= */
+.grid-3 {
+  display: grid;
+  gap: var(--space-5);
 }
 
-.contact-info {
-  background-color: var(--light-gray);
-  padding: 1.5rem;
-  border-radius: 4px;
-  margin-top: 1.5rem;
-}
-.contact-info h4 { margin-bottom: 0.75rem; }
-
-.placeholder-message {
-  margin-top: 1.5rem; padding: 1.5rem; background-color: #FFF9E6;
-  border-left: 4px solid var(--uc-gold); border-radius: 4px;
+.grid-2 {
+  display: grid;
+  gap: var(--space-5);
 }
 
-/* Timeline Placeholder */
-.timeline-placeholder { background-color: var(--light-gray); padding: 2rem; border-radius: 8px; }
-.timeline-placeholder ul { margin-top: 1rem; }
+.grid-auto {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: var(--space-5);
+}
 
-/* NOTE: Footer styles are intentionally NOT here to avoid conflicts.
-   Footer is styled in components.css */
+/* Desktop columns */
+@media (min-width: 768px) {
+  .grid-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  .grid-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
 
-/* Responsive Design */
+/* =========================================
+   FLEX UTILITIES
+   ========================================= */
+.flex {
+  display: flex;
+}
+
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+/* Gap utility */
+.gap-sm { gap: var(--space-2); }
+.gap-md { gap: var(--space-4); }
+.gap-lg { gap: var(--space-6); }
+
+/* =========================================
+   RESPONSIVE TYPE + ELEMENT ADJUSTMENTS
+   ========================================= */
 @media (max-width: 768px) {
-  .container { padding: 0 1rem; }
-  .hero-banner h1 { font-size: 2rem; }
-  .hero-banner p { font-size: 1rem; }
-  .benefits-grid { grid-template-columns: 1fr; }
-  h1 { font-size: 2rem; }
-  h2 { font-size: 1.75rem; }
-  h3 { font-size: 1.25rem; }
+  .section {
+    padding-block: var(--space-8);
+  }
+
+  .section-title {
+    font-size: var(--fs-h3);
+    line-height: var(--lh-h3);
+  }
+
+  .container {
+    padding-inline: var(--space-4);
+  }
 }
 
-/* White sheet wrapper to mimic modern rounded sections */
-.sheet{
-  background: var(--card);
-  border: 1px solid var(--stroke);
-  border-radius: var(--radius-xl);
+/* =========================================
+   FULL-WIDTH BACKGROUND STRIPS
+   ========================================= */
+.full-width-bg {
+  width: 100%;
+  padding-block: var(--space-10);
+}
+
+/* Optional: white sheet wrapper for inner sections */
+.sheet {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border-subtle);
+  border-radius: var(--radius-lg);
   box-shadow: var(--shadow-sm);
-  padding: clamp(16px, 3.5vw, 28px);
+  padding: clamp(16px, 3vw, 32px);
 }
 
-/* Section header row (title + right-side action) */
-.section-head{
-  display:flex; justify-content:space-between; align-items:center; gap:10px;
-  margin-bottom: 12px;
+/* Small header layout used by some pages */
+.section-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--space-3);
+  margin-bottom: var(--space-3);
 }
+
+/* =========================================
+   MOBILE STACKING HELPERS
+   ========================================= */
+.stack-mobile {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+@media (min-width: 768px) {
+  .stack-mobile {
+    flex-direction: row;
+  }
+}
+
+/* =========================================
+   HERO-SPECIFIC OPTIONAL SPACING (safe)
+   ========================================= */
+.hero {
+  padding-block: var(--space-10);
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding-block: var(--space-8);
+  }
+}
+
+/* =========================================
+   FOOTER GRID HANDLED IN components.css
+   ========================================= */

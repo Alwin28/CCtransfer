@@ -31,9 +31,11 @@
 html, body { height: 100%; }
 body {
   margin: 0;
-  font: 16px/1.5 Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-  color: var(--text);
-  background: linear-gradient(180deg, #dce9f5 0%, var(--smoke) 50%, #ffffff 100%);
+  font-family: var(--font-sans);
+  font-size: var(--fs-body);
+  line-height: var(--lh-body);
+  color: var(--color-text);
+  background: var(--color-bg);
 }
 
 /* Utilities shared by pages/components */
@@ -46,11 +48,83 @@ body {
 @media (min-width: 760px) { .grid-3 { grid-template-columns: repeat(3, 1fr); } }
 .muted { color: var(--muted); }
 
-/* === Modern look tokens === */
-:root{
-  --radius: 18px;             /* bump up roundness */
-  --radius-xl: 28px;
-  --shadow-sm: 0 6px 16px rgba(9, 18, 33, .08);
-  --shadow-md: 0 10px 28px rgba(9, 18, 33, .12);
-  --shadow-lg: 0 18px 42px rgba(9, 18, 33, .16);
+/* ===== Warm Academic DESIGN TOKENS (NEW SYSTEM) ===== */
+:root {
+  /* Neutrals / background */
+  --color-bg: #FCFAF7;
+  --color-surface: #FFFFFF;
+  --color-surface-alt: #F5EFE5;
+  --color-border-subtle: #E5E7EB;
+  --color-border-strong: #D1D5DB;
+
+  /* Text */
+  --color-text: #1F2937;
+  --color-text-muted: #6B7280;
+  --color-text-soft: #9CA3AF;
+
+  /* Brand */
+  --color-primary: #2A5CAA;          /* Main blue */
+  --color-primary-strong: #214A88;   /* Darker blue */
+  --color-primary-soft: #E0EBFF;     /* “Pill button” soft blue */
+
+  /* Accent */
+  --color-accent: #E6B77E;  
+  --color-accent-soft: #FFF4E3;
+  --color-accent-strong: #C28F4B;
+
+  /* States */
+  --color-success: #0E9F6E;
+  --color-success-soft: #ECFDF5;
+  --color-warning: #F59E0B;
+  --color-warning-soft: #FFFBEB;
+  --color-error: #DC2626;
+  --color-error-soft: #FEF2F2;
+
+  /* Shadow system */
+  --shadow-sm: 0 1px 2px rgba(15, 23, 42, 0.06);
+  --shadow-md: 0 4px 12px rgba(15, 23, 42, 0.08);
+  --shadow-lg: 0 12px 24px rgba(15, 23, 42, 0.12);
+
+  /* Radius */
+  --radius-sm: 8px;
+  --radius-md: 16px;
+  --radius-lg: 28px;
+  --radius-pill: 999px;
+
+  /* Spacing */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.5rem;
+  --space-6: 2rem;
+  --space-8: 3rem;
+  --space-10: 4rem;
+  --space-12: 6rem;
+
+  /* Typography */
+  --font-sans: "Inter", system-ui, -apple-system, BlinkMacSystemFont;
+  --font-serif: "Source Serif 4", Georgia, serif;
+  --fs-display: 3rem;
+  --lh-display: 3.5rem;
+  --fs-h1: 2.5rem;
+  --lh-h1: 3rem;
+  --fs-h2: 2rem;
+  --lh-h2: 2.5rem;
+  --fs-h3: 1.5rem;
+  --lh-h3: 2rem;
+  --fs-body-lg: 1.125rem;
+  --lh-body-lg: 1.75rem;
+  --fs-body: 1rem;
+  --lh-body: 1.625rem;
+  --fs-caption: 0.8125rem;
+  --lh-caption: 1.25rem;
+
+  /* Layout */
+  --container-max: 1200px;
+  --container-padding: var(--space-5);
+
+  /* Transitions */
+  --transition-fast: 150ms ease-out;
+  --transition-default: 200ms ease-out;
 }
