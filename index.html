@@ -15,6 +15,53 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/layout.css">
   <link rel="stylesheet" href="css/components.css">
+
+  <style>
+    /* Simple UC / CSU system badges on the homepage */
+    .system-logos {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      align-items: center;
+      justify-content: flex-start;
+      margin-top: 0.5rem;
+    }
+
+.system-logo {
+      display: inline-flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 0.75rem;
+      padding: 0.5rem 1rem;
+      border-radius: 9999px;
+      border: 1px solid #E5E7EB;
+      background: #FFFFFF;
+    }
+
+    .system-logo img {
+      height: 32px;
+      width: auto;
+      display: block;
+    }
+
+    .system-logo-text {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .system-logo-label {
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: #111827;
+      line-height: 1.2;
+    }
+
+    .system-logo-sub {
+      font-size: 0.8rem;
+      color: #6B7280;
+      line-height: 1.2;
+    }
+  </style>
 </head>
 <body>
   <!-- HEADER -->
@@ -75,6 +122,28 @@
             </div>
           </div>
         </aside>
+      </div>
+    </section>
+
+    <!-- UC / CSU systems strip -->
+    <section class="section" aria-label="Public university systems">
+      <div class="container">
+        <div class="system-logos">
+          <div class="system-logo">
+            <img src="images/uc-logo.jpg" alt="University of California logo" />
+            <div class="system-logo-text">
+              <span class="system-logo-label">University of California</span>
+              <span class="system-logo-sub">UC campuses</span>
+            </div>
+          </div>
+          <div class="system-logo">
+            <img src="images/csu-logo.png" alt="California State University logo" />
+            <div class="system-logo-text">
+              <span class="system-logo-label">California State University</span>
+              <span class="system-logo-sub">CSU campuses</span>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 

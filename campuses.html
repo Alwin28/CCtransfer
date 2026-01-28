@@ -42,10 +42,9 @@
     .finder-form {
       max-width: 600px;
       margin: 0 auto;
-      background: white;
-      padding: 2rem;
-      border-radius: 12px;
-      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+      padding: 0;
+      background: transparent;
+      box-shadow: none;
     }
     
     .finder-form label {
@@ -227,59 +226,63 @@
     </div>
   </header>
 
-  <!-- Campus Finder Hero -->
-  <section class="campus-finder-section">
+  <!-- Page Hero -->
+  <section class="hero" style="padding-block: 72px 40px;">
     <div class="container">
-      <h1>Find a California Community College Near You</h1>
-      <p>Enter your city to discover the three closest community colleges in California.</p>
-      
-      <form class="finder-form" id="campusFinderForm">
-        <label for="cityInput">Your City in California</label>
-        <input 
-          type="text" 
-          id="cityInput" 
-          name="city" 
-          placeholder="e.g., Los Angeles, San Francisco, San Diego"
-          autocomplete="off"
-          required
-        />
-        <button type="submit">Find Nearest Colleges</button>
-        <div id="campusError"></div>
-      </form>
+      <h1>Find a Community College Near You</h1>
+      <p class="hero-sub">Enter your California city to see the closest community colleges and open directions in Google Maps.</p>
     </div>
   </section>
 
-  <!-- Results Section -->
-  <section class="results-section">
-    <div class="container">
-      <div id="campusResults"></div>
-    </div>
-  </section>
+  <main class="main-content" style="padding: 2.5rem 0 3rem;">
+    <div class="container" style="display: flex; flex-direction: column; gap: 2rem;">
 
-  <!-- Additional Info -->
-  <section class="info-section">
-    <div class="container">
-      <h2>Why Choose a Community College?</h2>
-      <div class="info-grid">
-        <div class="info-card">
-          <h3>Affordable Education</h3>
-          <p>Save thousands on tuition while completing your first two years of college. California community colleges offer some of the lowest tuition rates in the nation.</p>
+      <section class="sheet content-section">
+        <div class="section-head">
+          <h2>Search by City</h2>
         </div>
-        <div class="info-card">
-          <h3>Guaranteed Transfer</h3>
-          <p>TAG (Transfer Admission Guarantee) programs provide guaranteed admission to UC and CSU campuses when you meet specific requirements.</p>
+        <p>Type your California city to find the three closest community colleges. Click a result to open directions in Google Maps.</p>
+        <form class="finder-form" id="campusFinderForm">
+          <label for="cityInput">Your City in California</label>
+          <input 
+            type="text" 
+            id="cityInput" 
+            name="city" 
+            placeholder="e.g., Los Angeles, San Francisco, San Diego"
+            autocomplete="off"
+            required
+          />
+          <button type="submit">Find Nearest Colleges</button>
+          <div id="campusError"></div>
+        </form>
+        <div id="campusResults"></div>
+      </section>
+
+      <section class="sheet content-section">
+        <div class="section-head">
+          <h2>Why Choose a Community College?</h2>
         </div>
-        <div class="info-card">
-          <h3>Smaller Classes</h3>
-          <p>Enjoy more personalized attention from instructors with smaller class sizes compared to large university lectures.</p>
+        <div class="info-grid">
+          <div class="info-card">
+            <h3>Affordable Education</h3>
+            <p>Save thousands on tuition while completing your first two years of college. California community colleges offer some of the lowest tuition rates in the nation.</p>
+          </div>
+          <div class="info-card">
+            <h3>Guaranteed Transfer</h3>
+            <p>TAG (Transfer Admission Guarantee) programs provide guaranteed admission to UC and CSU campuses when you meet specific requirements.</p>
+          </div>
+          <div class="info-card">
+            <h3>Smaller Classes</h3>
+            <p>Enjoy more personalized attention from instructors with smaller class sizes compared to large university lectures.</p>
+          </div>
+          <div class="info-card">
+            <h3>Stay Close to Home</h3>
+            <p>Find a quality education near your community while maintaining work and family commitments.</p>
+          </div>
         </div>
-        <div class="info-card">
-          <h3>Stay Close to Home</h3>
-          <p>Find a quality education near your community while maintaining work and family commitments.</p>
-        </div>
-      </div>
+      </section>
     </div>
-  </section>
+  </main>
 
   <!-- Footer -->
   <footer class="site-footer">
