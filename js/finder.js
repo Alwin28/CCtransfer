@@ -107,19 +107,25 @@ function showError(errorDiv, message) {
   errorDiv.style.display = 'block';
 }
 
+function buildMapsUrl(originCity, college) {
+  const origin = encodeURIComponent(`${originCity}, California`);
+  const destination = encodeURIComponent(`${college.name}, ${college.city}, California`);
+  return `https://www.google.com/maps/dir/?api=1&origin=${origin}&destination=${destination}`;
+}
+
 function displayResults(resultsDiv, colleges, cityName) {
   resultsDiv.innerHTML = `
     <h3>Nearest Community Colleges to ${cityName}</h3>
     <div class="college-results">
       ${colleges.map((college, index) => `
-        <div class="college-card">
+        <a class="college-card" href="${buildMapsUrl(cityName, college)}" target="_blank" rel="noopener">
           <div class="college-rank">${index + 1}</div>
           <div class="college-info">
             <h4>${college.name}</h4>
             <p class="college-location">${college.city}</p>
             <p class="college-distance">${college.distance.toFixed(1)} miles away</p>
           </div>
-        </div>
+        </a>
       `).join('')}
     </div>
   `;
