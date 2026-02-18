@@ -1,5 +1,125 @@
-<!-- Contact Page -->
-<!-- Contact form ("Get in touch / collaborate / report outdated info") -->
-<!-- Section introducing creators (short bios) -->
-<!-- Invite for transfer students to join the project -->
-<!-- Link to GitHub repo or "Contribute" page -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-93JRKG8DJ3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-93JRKG8DJ3');
+  </script>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Get Help — CATransferStudents</title>
+
+  <meta name="description" content="Contact us for help with your California community college transfer journey." />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/layout.css" />
+  <link rel="stylesheet" href="css/components.css" />
+</head>
+<body>
+  <!-- Site Header / Nav -->
+  <header class="site-header">
+    <div class="container row between center">
+      <a class="logo" href="/">CATransferStudents</a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav" id="siteNav">
+        <a href="transfer-programs.html">Programs</a>
+        <a href="deadlines.html">Deadlines</a>
+        <a href="resources.html">Resources</a>
+        <a href="opportunities.html">Opportunities</a>
+        <a href="campuses.html">Campuses</a>
+        <a href="contact.html" aria-current="page">Get Help</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Page Hero -->
+  <section class="hero" style="padding-block: 72px 40px;">
+    <div class="container">
+      <h1>Get Help</h1>
+      <p class="hero-sub">Have questions about your transfer journey? Here's how to get support.</p>
+    </div>
+  </section>
+
+  <main class="main-content" style="padding: 2.5rem 0 3rem;">
+    <div class="container" style="display: flex; flex-direction: column; gap: 2rem; max-width: 720px;">
+
+      <!-- Contact Us -->
+      <section class="sheet content-section">
+        <h2>Contact Us</h2>
+        <p>If you have questions about this website, found outdated information, or want to contribute, feel free to reach out:</p>
+        <p style="margin-top: 1rem;">
+          <a href="mailto:ivcstudentsuccessclub@gmail.com" style="font-size: 1.1rem; font-weight: 600; color: var(--color-primary);">
+            ivcstudentsuccessclub@gmail.com
+          </a>
+        </p>
+      </section>
+
+      <!-- Talk to a Counselor -->
+      <section class="sheet content-section">
+        <h2>Talk to a Counselor</h2>
+        <p>For personalized guidance on your transfer plan, course selection, and application strategy, <strong>speak with a counselor at your community college</strong>. They can help you:</p>
+        <ul style="margin-top: 1rem;">
+          <li>Create or review your Student Education Plan (SEP)</li>
+          <li>Verify your major preparation and GE requirements</li>
+          <li>Navigate TAG, IGETC, and transfer deadlines</li>
+          <li>Get advice tailored to your specific situation</li>
+        </ul>
+        <p style="margin-top: 1rem;">Find your college's counseling office through your student portal or campus website.</p>
+      </section>
+
+      <!-- Official Resources -->
+      <section class="sheet content-section">
+        <h2>Official Resources</h2>
+        <p>For the most up-to-date and official information, always check these sources:</p>
+        <ul style="margin-top: 1rem;">
+          <li><a href="https://admission.universityofcalifornia.edu/" target="_blank" rel="noopener"><strong>UC Admissions</strong></a> — Requirements, deadlines, and campus info for University of California</li>
+          <li><a href="https://www.calstate.edu/apply/transfer" target="_blank" rel="noopener"><strong>CSU Transfer</strong></a> — California State University transfer requirements and application</li>
+          <li><a href="https://www.cccco.edu/" target="_blank" rel="noopener"><strong>California Community Colleges</strong></a> — Official CCC Chancellor's Office website</li>
+          <li><a href="https://assist.org" target="_blank" rel="noopener"><strong>ASSIST.org</strong></a> — Course articulation agreements between CC and UC/CSU</li>
+        </ul>
+      </section>
+
+      <!-- Disclaimer -->
+      <section class="sheet content-section" style="background: var(--color-surface-alt);">
+        <p style="font-size: 0.9rem; color: var(--color-text-muted);">
+          <strong>Disclaimer:</strong> This website is created by students, for students. We are not affiliated with the California Community Colleges, UC, or CSU systems. Information may change — always verify with official sources and your college counselor.
+        </p>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container row between start">
+      <div>
+        <div class="logo" style="color: #fff;">CATransferStudents</div>
+        <p class="muted" style="color: #9CA3AF;">For students, by students. Not affiliated with CCC/UC/CSU.</p>
+      </div>
+      <nav class="footer-links">
+        <a href="resources.html">Resources</a>
+        <a href="opportunities.html">Opportunities</a>
+        <a href="deadlines.html">Deadlines</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>
