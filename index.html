@@ -70,6 +70,30 @@
       color: #6B7280;
       line-height: 1.2;
     }
+
+    /* Mobile adjustments for system logos */
+    @media (max-width: 640px) {
+      .system-logos {
+        flex-direction: column;
+        align-items: stretch;
+      }
+      
+      .system-logo {
+        justify-content: flex-start;
+      }
+      
+      .system-logo img {
+        height: 28px;
+      }
+      
+      .system-logo-label {
+        font-size: 0.85rem;
+      }
+      
+      .system-logo-sub {
+        font-size: 0.75rem;
+      }
+    }
   </style>
 </head>
 <body>
