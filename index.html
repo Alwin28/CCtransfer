@@ -115,8 +115,38 @@
       </nav>
 
       <a href="form.html" class="btn btn-primary">Start your transfer plan</a>
+      
+      <!-- Mobile menu button -->
+      <button class="mobile-menu-toggle" aria-label="Open menu" onclick="document.getElementById('mobile-nav').classList.add('is-open')">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
     </div>
   </header>
+
+  <!-- Mobile Navigation -->
+  <nav id="mobile-nav" class="mobile-nav">
+    <div class="mobile-nav-header">
+      <div class="site-logo">CATransferStudents.com</div>
+      <button class="mobile-nav-close" aria-label="Close menu" onclick="document.getElementById('mobile-nav').classList.remove('is-open')">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+        </svg>
+      </button>
+    </div>
+    <div class="mobile-nav-links">
+      <a href="transfer-programs.html">Programs</a>
+      <a href="opportunities.html">Opportunities</a>
+      <a href="deadlines.html">Deadlines</a>
+      <a href="resources.html">Guides</a>
+      <a href="campuses.html">Campuses</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="mobile-nav-cta">
+      <a href="form.html" class="btn btn-primary">Start your transfer plan</a>
+    </div>
+  </nav>
 
   <main>
     <!-- HERO -->
